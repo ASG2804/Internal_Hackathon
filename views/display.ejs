@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Display</title>
+    <link rel="stylesheet" href="/css/display.css">
+
+</head>
+<body>
+    <h1>Student Information</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Mobile</th>
+        </tr>
+        <% students.forEach((student) => { %>
+            <tr>
+                <td><%= student.Name %></td>
+                <td><%= student.Email %></td>
+                <td><%= student.Department %></td>
+                <td><%= student.Mobile %></td>
+            </tr>
+        <% }); %>
+    </table>
+</body>
+</html>
